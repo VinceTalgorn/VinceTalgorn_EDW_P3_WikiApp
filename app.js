@@ -25,7 +25,7 @@ function handleSubmit(e) {
 async function wikiApiCall(searchInput) {
     try {
         const response = await fetch(
-            `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${searchInput}`
+            `https://fr.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=${searchInput}`
         );
         //Si on a une erreur réseau
         if (!response.ok) {
@@ -46,7 +46,7 @@ function createCards(data) {
         return;
     }
     data.forEach((el) => {
-        const url = `https://en.wikipedia.org/?curid=${el.pageid}`;
+        const url = `https://fr.wikipedia.org/?curid=${el.pageid}`;
         const card = document.createElement("div");
         card.className = "result_item";
         card.innerHTML = `
