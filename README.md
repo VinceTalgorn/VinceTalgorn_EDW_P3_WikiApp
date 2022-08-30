@@ -9,7 +9,7 @@
 
 1. Création d'un application Wikipédia
 2. Développement avec les langages HTML/CSS/JavaScript
-3. Appel et utilisation de l'api fourni par wikipédia
+3. Appel et utilisation de l'api fourni par Wikipédia
 
 ## Notes sur la réalisation du projet
 
